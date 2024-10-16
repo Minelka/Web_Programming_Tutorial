@@ -21,6 +21,28 @@
         <style>
             body {background-color: rgb(194, 139, 178);}
             p{color:aqua !important;/* bu satır css yorum satırı*/}
+            /* tüm spanları etkiler eğer style içinde bu durumu belirtirsen */
+            span
+            {
+                color: rgb(255, 0, 187);
+            }
+             /* .kirmiziyazi {color:red} */
+            
+             div{background-color: chocolate;}
+
+             h1{background-color: rgb(30, 210, 198);}
+
+             p{background-color: rgb(30, 210, 57);}
+
+             a{background-color: rgb(162, 210, 30);}
+
+             ul{background-color: rgb(210, 30, 30);}
+
+             b,s,i,u{background-color: rgb(156, 130, 218);}
+
+             mark{background-color: green;}
+
+             section,header,footer{background-color: green;}
         </style>
         
     </head>
@@ -35,9 +57,47 @@
         <br/>
         <br/> 
         <br/>
-        <br/>
-        <br/>
-        <br/>
+        <!-- yanyana yazarken -->
+        <h1>Inline Etiketler</h1>
+        <span>Lorem, ipsum dolor.</span>
+        <!-- span içerisinde class olarak rengi belirleyebiliyoruz. -->
+        <span class="kirmiziyazi">Lorem, ipsum dolor.</span>
+
+        <b>KALIN</b>
+        <strong>html 5 strong bold</strong>
+
+        <i>yatay</i>
+        <em>html 5 strong italik</em>
+
+        <u>alt çizgi</u>
+        <ins>html 5 strong alt çizgi</ins>
+
+        <s>üstçizgi</s>
+        <del>html 5 strong üstü çizgi</del>
+
+        <mark>bu yazı sarı çizgi ile işartelndi</mark>
+        <!-- altalta yazarken -->
+        <h1>Block</h1>
+        <div>Lorem, ipsum dolor.
+            <span class="kirmiziyazi">Ek bilgi</span>
+        </div>
+        <div>Lorem, ipsum dolor.</div>
+        <UL>
+            <li>
+                pazartesi
+            </li>
+            <li>sali</li>
+            <li>çarşamba</li>
+        </UL>
+
+        <section>
+            <h2>Başlık 2</h2>
+        </section>
+        <header>header</header>
+        <footer>footer</footer>
+        
+
+        
         
     </body>
 </html>
