@@ -1,0 +1,39 @@
+/* tag seçici */
+/* blok elemanları(div) kendi boyutları girildiğinde onu hemen 
+işgal eder.inline (span) kendine gelen elemanın boyutunu alır bu 
+yüzden birşey yazılmazsa gözükmez */
+div
+{
+    background-color: rgb(205, 207, 238) !important;
+    width: 200px;
+    height: 200px;
+    /* border-bottom: 10px solid brown;
+    border-bottom: 10px dotted brown; */
+} 
+
+/* css sınıfı */
+.box
+{
+    border: 10px solid black;
+    padding: 300px;
+}
+/* özellik seçici */
+div[name="kutu"]
+{
+    box-sizing: border-box;
+    background-color: orangered;
+}
+/* ıd seçici */
+#box1
+{
+    margin: 10px; 
+    padding: 25;
+}
+/* birbirlerine eze eze gittiler güçlü olan id fakat id yi de 
+ezen html deki style ile ezilebilir di, box ütüne geldiğinde 
+güç numaraları geliyor bu şekilde de bakabilirsin fakat important
+ yazıldığında o daha önemli oluyor fakat iki important gelirse o 
+ zmaan yine güçleri devreye girer hangsi güçlüyse o gelir*/
+
+
+
