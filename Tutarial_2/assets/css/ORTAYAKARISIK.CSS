@@ -1,0 +1,202 @@
+body
+{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+.container 
+{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(203, 203, 234);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,0)
+}
+
+.box 
+{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    /* yatay olması içinbloku inline 
+    çektik blok tipi gitmesin diye inline-block tercih ettik. */
+    /* display: inline-block; */
+    font-size: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 2s;
+
+}
+
+.box:hover
+{
+    cursor:zoom-in;
+    /* width: 100px;
+    height: 100px; */
+    transform: scale(2,2) translate(-25%, -25% );
+}
+
+.box:hover span
+{
+    z-index: 3;
+    letter-spacing: 5px;
+    animation: textChange 5s; 
+}
+
+@keyframes textChange 
+{
+    0% {letter-spacing: 5px;}
+    25%{letter-spacing: 7px}
+    50%{letter-spacing: 9px}
+    75%{letter-spacing: 11px}
+    100%{letter-spacing: 13px; background-color: blueviolet; }
+}
+
+img
+{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+span
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(76, 60, 226);
+    z-index: 1;
+}
+
+
+.f-left{float: left;}
+/* bunlardan sonra box için de yazmamıza gerek kalmıyor */
+.f-right{float: right;} 
+.m-5{margin: 0px;}
+.m-10{margin: 10px;}
+.m-15{margin: 15px;}
+.m-20{margin: 20px;}
+.m-25{margin: 25px;}
+
+.lt{left: 0; top: 0;}
+.lc{left: 0; top: 50%; transform: translate(0,-50%);} 
+.lb{left: 0; bottom: 0;}
+
+.mt{left: 50%; top: 0; transform: translate(-50%,0);}
+.mc{left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.mb{left: 50%; bottom: 0; transform: translate(-50%,0);}
+
+.rt{right: 0; top: 0;}
+.rc{right: 0; top: 50%; transform: translate(0,-50%);}
+.rb{right: 0; bottom: 0;}
+
+.bg-color-blueviolet{background-color: blueviolet;}
+.bg-color-yesil{background-color: rgb(190, 233, 192);}
+.bg-color-lila{background-color: rgb(147, 156, 218);}
+
+.color-whitesmoke{color: whitesmoke;}
+
+.position-relative{position: relative;}
+.position-absolute{position: absolute;}
+.position-fixed{position: fixed;}
+.position-sticky{position: sticky;}
+.position-static{position: static;}
+
+
+
+#box-1
+{
+    /* kendinden bir sonrakine kendine yapıştırır. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+    
+}
+#box-2
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+    
+}
+#box-3:hover
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    /* left: 0;
+    top: 0; */
+    /* yerini değiştirmez */
+    /* position: static;  */
+    /* bağını kopartmadan yerini değiştirir */
+    /* position: relative;  */
+    /* bağını kopartır yerini değiştirir */
+    position: absolute; 
+    transform: scale(2,2) translate(25%,-25%);
+}
+#box-4
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+}
+#box-5
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+    
+}
+#box-6:hover
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+    transform: scale(2,2) translate(25%,-25%);
+    
+}
+#box-7:hover
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+    transform: scale(2,2) translate(-25%,25%);
+}
+#box-8:hover
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+    transform: scale(2,2) translate(-25%,25%);
+}
+#box-9:hover
+{
+    /* kendinden bir sonrakine kendine yapıştırız. */
+    /* float: left;
+    margin: 5px; */
+
+    position: absolute; 
+    transform: scale(2,2) translate(25%,25%);
+}
