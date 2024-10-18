@@ -1,0 +1,100 @@
+/* tagName{}tag eleman yakalr(çok eleman yakalar) */
+/* .className{} bu tagında class attırır. bu değeri olanı etkiler */
+/* #tagId{} bu ise bir tek eleman etkiler */
+/* tagName[attribute=value]{} tagın attribute value değeri sahip olanlar */
+
+.container
+{
+    width: 600px;
+    height: 600px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    /* arada sayı kutularının boşluk ypar */
+    /* kenarlara kutuları yapıştırır */
+    align-content: space-between ;
+    justify-content: space-between;
+    /* sırasının dikey bir şekilde ilerletir */
+    /* flex-direction: column; */
+    /* sol alttan başlatır sıralamayı */
+    /* flex-direction: column-reverse; */
+    /* en sağdan başlatır sırayı  */
+    /* flex-direction: row-reverse; */
+    gap: 50px   ;
+}
+.box
+{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+    border: 1px solid black;
+    /* bordelerın etrafından 50 ye eşitledi box sizing */
+    box-sizing: border-box;
+    
+}
+/* sen sırasını belirlersin burada numara verdiklerin o aldığı 
+numaradır fakat vermezsen onun varsayılan sırası sıfır olarak alır */
+/* .item-5
+{
+    order: 1;
+    flex-grow: 1;
+}
+.item-3
+{
+    order: 2;
+    flex-grow: 1;
+}
+.item-7
+{
+    order: 10;
+    flex-grow: 1;
+}
+.item-2
+{
+    order: 4;
+    flex-grow: 1;
+} */
+
+.item-10
+{
+    /* order: 4; */
+    flex-grow: 4;
+}
+
+/* BURADA BAR ŞEKLİYLE İLERLERME YAPILIYOR. */
+
+/* .cotainer-flex
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: chocolate;
+}
+ 
+.kutu
+{
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+    font-size: 24px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+} */
+ 
+/* .oge-1{background-color: blue; flex-grow: 1;}
+.oge-2{background-color: red; flex-grow: 5;}
+.oge-3{background-color: green; flex-grow: 1;} */
+ 
+/* .oge-1{background-color: blue; }
+.oge-2{background-color: red; flex-shrink: 2;}
+.oge-3{background-color: green; } */
+ 
+/* .kutu:nth-of-type(1){flex-shrink: 3;} */
+ 
+
