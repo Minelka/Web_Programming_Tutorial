@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <!-- burada sayfa adının yanına icon getirdik. -->
-    <link rel="icon" type="img/png" href="/JavaScriptTutorial_0/img/icons8-javascript-32.png">
-    <!-- türünü her zaman yazmalısın scriptin -->
-    <script type="text/javascript" src="js/lesson-1.js">
-    </script>
+    <title>Javascript Dom Calısması</title>
+    
+    <link rel="icon" type="image/png" href="images/icons8-javascript-32.png" />
 </head>
 <body>
-    <p>Merhaba Javascript Dersi</p>
-        ClickMe;
-    <button onclick="ClickMe();"> Click Me!</button>
+    <p>Merhaba Javascript Dom KUllanımı</p>
+    <!-- kalın yazar -->
+    <strong>Merhaba Dünya</strong> <br><br>
+    <!-- İTALİK YAZAR -->
+    <em>Hello</em><br><br>
+
+    <button onclick="EkleFileUpload();">Yeni dosya ekle</button>
+
+    <div id="imageUpload"> 
+        
+    </div>
+
+    <div id="ekran" style="width: 300px; height: 200px; margin: 10px; border: 1px solid black;">
+
+    </div>
+    <input type="text " id="mesaj" style="margin: 10px;" placeholder="mesajınızı giriniz">
+    <button onclick="Gonder()">Gönder</button>
+
+    <script type="text/javascript" src="js/lesson-5.js"></script>
 </body>
 </html>
